@@ -1,6 +1,6 @@
 ---
-title: First Post
-description: Thisi is my first post
+title: First Postaaaaaaaaaaaaaaaaaaaa
+description: This is my first post
 date: '2023-9-23'
 categories:
   - sveltekit

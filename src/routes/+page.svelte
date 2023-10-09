@@ -1,31 +1,44 @@
 <script>
-	import { Heading, P, Button } from 'flowbite-svelte'
+	import { Heading, GradientButton } from 'flowbite-svelte'
 	import { Avatar } from 'flowbite-svelte'
-	import { ArrowRightOutline } from 'flowbite-svelte-icons'
+	import { ArrowUpRightFromSquareOutline, GithubSolid, LinkedinSolid, EnvelopeOpenSolid} from 'flowbite-svelte-icons'
 </script>
 
-<div class="text-center flex flex-wrap justify-center items-center">
-	<Heading tag="h1" class="mb-4" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl"
-		>Hi! I'm Gabriel
+<div class="text-center flex flex-col items-center">
+	<Heading tag="h1" class="mb-2" customSize="text-4xl font-extrabold md:text-5xl lg:text-6xl">
+		Hi! I'm Gabriel
 	</Heading>
-	<Heading tag="h2" class="mb-4" customSize="text-2xl font-extrabold  md:text-3xl lg:text-3xl"
-		>Hi! I'm Gabriel
+	<Heading tag="h3" class="mb-4" customSize="text-2xl font-extrabold md:text-2xl lg:text-2xl">
+		Software Engineer
 	</Heading>
 	<Avatar
 		src="https://avatars.githubusercontent.com/u/73550410?v=4"
-		dot={{ placement: 'top-right', color: 'red' }}
-		rounded
-		size="lg"
+		size="xl"
 		border
 		class="mb-4 ring-orange-500 dark:ring-orange-500"
 	/>
 
-	<P class="mb-8 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-300">
-		Welcome to my Blog, I'm a Software Engineer with a lot of passions but if you want to know more
-		check click the button below.
-	</P>
-	<Button href="/about">
-		About Me
-		<ArrowRightOutline class="w-3.5 h-3.5 ml-2" />
-	</Button>
+	<GradientButton href="/about" color="pinkToOrange" shadow={true}>
+		Learn More
+		<ArrowUpRightFromSquareOutline class="w-3.5 h-3.5 ml-2" />
+	</GradientButton>
 </div>
+
+<div class="flex flex-row justify-center space-x-3 mt-4">
+	<a href="https://www.linkedin.com/in/gabriel-monti-floppy/">
+		<LinkedinSolid class="dark:text-gray-300  dark:hover:text-orange-500"></LinkedinSolid>
+	</a>
+	<a href="https://github.com/raspFloppy">
+		<GithubSolid class="dark:text-gray-300 dark:hover:text-orange-500"></GithubSolid>
+	</a>
+    <a href="mailto:gabriel.monti@tutamail.com">
+		<EnvelopeOpenSolid class="dark:text-gray-300 dark:hover:text-orange-500"></EnvelopeOpenSolid>
+	</a>
+</div>
+
+
+<style>
+	a:hover {
+		color: #ff5a1f
+	}
+</style>

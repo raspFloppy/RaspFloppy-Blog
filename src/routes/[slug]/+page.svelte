@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
+	import { Span, Badge, P } from 'flowbite-svelte'
 
 	export let data
 </script>
@@ -10,46 +11,21 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article class="dark:text-white flex flex-col justify-center items-center">
 	<hgroup>
-		<h1>{data.meta.title}</h1>
+		<Span>{data.meta.title}</Span>
 		<p>Published at {formatDate(data.meta.date)}</p>
 	</hgroup>
 
-	<div class="tags">
+	<div class="grid grid-cols-3 justify-center gap-4">
 		{#each data.meta.categories as category}
-			<span class="surface-4">&num;{category}</span>
+			<Badge border>&num;{category}</Badge>
 		{/each}
 	</div>
 
-	<div class="prose">
+	<div class="mt-10">
 		<svelte:component this={data.content} />
 	</div>
 </article>
 
-<style>
-	article {
-		max-inline-size: var(--size-content-3);
-		margin-inline: auto;
-	}
 
-	h1 {
-		text-transform: capitalize;
-	}
-
-	h1 + p {
-		margin-top: var(--size-2);
-		color: var(--text-2);
-	}
-
-	.tags {
-		display: flex;
-		gap: var(--size-3);
-		margin-top: var(--size-7);
-	}
-
-	.tags > * {
-		padding: var(--size-2) var(--size-3);
-		border-radius: var(--radius-round);
-	}
-</style>
