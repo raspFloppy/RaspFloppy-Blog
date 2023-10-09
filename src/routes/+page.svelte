@@ -1,51 +1,31 @@
-<script lang="ts">
-	import * as config from '$lib/config'
-	import { formatDate } from '$lib/utils'
-
-	export let data
+<script>
+	import { Heading, P, Button } from 'flowbite-svelte'
+	import { Avatar } from 'flowbite-svelte'
+	import { ArrowRightOutline } from 'flowbite-svelte-icons'
 </script>
 
-<svelte:head>
-	<title>{config.title}</title>
-</svelte:head>
+<div class="text-center flex flex-wrap justify-center items-center">
+	<Heading tag="h1" class="mb-4" customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl"
+		>Hi! I'm Gabriel
+	</Heading>
+	<Heading tag="h2" class="mb-4" customSize="text-2xl font-extrabold  md:text-3xl lg:text-3xl"
+		>Hi! I'm Gabriel
+	</Heading>
+	<Avatar
+		src="https://avatars.githubusercontent.com/u/73550410?v=4"
+		dot={{ placement: 'top-right', color: 'red' }}
+		rounded
+		size="lg"
+		border
+		class="mb-4 ring-orange-500 dark:ring-orange-500"
+	/>
 
-<section>
-	<ul class="posts">
-		{#each data.posts as post}
-			<li class="post">
-				<a href={post.slug} class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
-			</li>
-		{/each}
-	</ul>
-</section>
-
-<style>
-	.posts {
-		display: grid;
-		gap: var(--size-7);
-	}
-
-	.post {
-		max-inline-size: var(--size-content-3);
-	}
-
-	.post:not(:last-child) {
-		border-bottom: 1px solid var(--border);
-		padding-bottom: var(--size-7);
-	}
-
-	.title {
-		font-size: var(--font-size-fluid-3);
-		text-transform: capitalize;
-	}
-
-	.date {
-		color: var(--text-2);
-	}
-
-	.description {
-		margin-top: var(--size-3);
-	}
-</style>
+	<P class="mb-8 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-300">
+		Welcome to my Blog, I'm a Software Engineer with a lot of passions but if you want to know more
+		check click the button below.
+	</P>
+	<Button href="/about">
+		About Me
+		<ArrowRightOutline class="w-3.5 h-3.5 ml-2" />
+	</Button>
+</div>

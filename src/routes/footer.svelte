@@ -1,18 +1,10 @@
-<script lang="ts">
+<script>
 	import * as config from '$lib/config'
+	import { DarkMode } from 'flowbite-svelte'
+	import { Footer, FooterCopyright } from 'flowbite-svelte'
 </script>
 
-<footer>
-	<p>{config.title} &copy {new Date().getFullYear()}</p>
-</footer>
-
-<style>
-	footer {
-		padding-block: var(--size-7);
-		border-top: 1px solid var(--border);
-	}
-
-	p {
-		color: var(--text-2);
-	}
-</style>
+<Footer>
+	<FooterCopyright href="/" by={config.title} year={new Date().getFullYear()} />
+	<DarkMode />
+</Footer>
