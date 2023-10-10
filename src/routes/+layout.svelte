@@ -2,7 +2,6 @@
 	import '../app.postcss'
 	import Header from './header.svelte'
 	import Footer from './footer.svelte'
-
 </script>
 
 <div class="flex flex-col min-h-screen">

@@ -5,6 +5,7 @@ date: '2023-9-24'
 categories:
   - sveltekit
   - svelte
+  - linux
 published: true
 ---
 

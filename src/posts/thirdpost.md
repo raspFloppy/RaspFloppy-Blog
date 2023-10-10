@@ -7,3 +7,5 @@ categories:
   - svelte
 published: true
 ---
+
+## Table of Contents

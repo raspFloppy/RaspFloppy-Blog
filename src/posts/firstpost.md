@@ -1,5 +1,5 @@
 ---
-title: First Postaaaaaaaaaaaaaaaaaaaa
+title: First Post
 description: This is my first post
 date: '2023-9-23'
 categories:

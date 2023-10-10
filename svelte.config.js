@@ -5,6 +5,7 @@ import shiki from 'shiki'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
+import rehypeKatex from 'rehype-katex'
 
 /**@type {import('mdsvex'.MdsvexCompileOptions)} */
 const mdsvexOptions = {
@@ -17,11 +18,11 @@ const mdsvexOptions = {
 			const highlighter = await shiki.getHighlighter({ theme: 'poimandres' })
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }))
 
-			return `@html \`${html}\``
+			return `{@html \`${html}\`}`
 		}
 	},
 	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
-	rehypePlugins: [rehypeSlug]
+	rehypePlugins: [rehypeSlug, rehypeKatex]
 }
 
 /**@type {import('@sveltejs/kit'.Config)} */

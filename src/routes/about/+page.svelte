@@ -1,7 +1,12 @@
 <script>
+	import { description } from '$lib/config'
 	import { Timeline, TimelineItem, Button } from 'flowbite-svelte'
 	import { ArrowRightOutline } from 'flowbite-svelte-icons'
 </script>
+
+<svelte:head>
+	<title>{description}</title>
+</svelte:head>
 
 <Timeline>
 	<TimelineItem title="Movendo Technology" date="March 2022 - Present">

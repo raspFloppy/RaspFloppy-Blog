@@ -1,7 +1,12 @@
 <script>
 	import { Heading, GradientButton } from 'flowbite-svelte'
 	import { Avatar } from 'flowbite-svelte'
-	import { ArrowUpRightFromSquareOutline, GithubSolid, LinkedinSolid, EnvelopeOpenSolid} from 'flowbite-svelte-icons'
+	import {
+		ArrowUpRightFromSquareOutline,
+		GithubSolid,
+		LinkedinSolid,
+		EnvelopeOpenSolid
+	} from 'flowbite-svelte-icons'
 </script>
 
 <div class="text-center flex flex-col items-center">
@@ -26,19 +31,14 @@
 
 <div class="flex flex-row justify-center space-x-3 mt-4">
 	<a href="https://www.linkedin.com/in/gabriel-monti-floppy/">
-		<LinkedinSolid class="dark:text-gray-300  dark:hover:text-orange-500"></LinkedinSolid>
+		<LinkedinSolid class="dark:text-gray-300  dark:hover:text-orange-400 hover:text-orange-500" />
 	</a>
 	<a href="https://github.com/raspFloppy">
-		<GithubSolid class="dark:text-gray-300 dark:hover:text-orange-500"></GithubSolid>
+		<GithubSolid class="dark:text-gray-300 dark:hover:text-orange-400 hover:text-orange-500" />
 	</a>
-    <a href="mailto:gabriel.monti@tutamail.com">
-		<EnvelopeOpenSolid class="dark:text-gray-300 dark:hover:text-orange-500"></EnvelopeOpenSolid>
+	<a href="mailto:gabriel.monti@tutamail.com">
+		<EnvelopeOpenSolid
+			class="dark:text-gray-300 dark:hover:text-orange-400 hover:text-orange-500"
+		/>
 	</a>
 </div>
-
-
-<style>
-	a:hover {
-		color: #ff5a1f
-	}
-</style>
