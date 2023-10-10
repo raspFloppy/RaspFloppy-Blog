@@ -4,28 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.prose :is(h1, h2, h3, h4, h5, h6) {
-	margin-top: var(--size-8);
-	margin-bottom: var(--size-3);
-}
+:where(h2, h3, h4, h5, h6) {
+	.icon-link {
+		position: relative;
 
-.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
-	margin-top: var(--size-7);
-}
+		&::before {
+			content: '#';
+			position: absolute;
+			left: -1ch;
+			top: 0;
+			line-height: 1;
+			opacity: 0;
+			text-decoration: underline;
+		}
+	}
 
-.prose :is(ul, ol) {
-	list-style-type: '🔥';
-	padding-left: var(--size-5);
-}
-
-.prose :is(ul, ol) li {
-	margin-block: var(--size-2);
-	padding-inline-start: var(--size-2);
-}
-
-.prose pre {
-	max-inline-size: 100%;
-	padding: 1rem;
-	border-radius: 8px;
-	tab-size: 2;
+	&:hover .icon-link::before {
+		opacity: 1;
+	}
 }

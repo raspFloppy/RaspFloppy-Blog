@@ -10,9 +10,8 @@ published: true
 
 ## Table of Contents
 
-## Markdown
+## Hello 👋
 
-Hello 👋
 
 ```cpp
 int main()

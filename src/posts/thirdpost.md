@@ -9,3 +9,17 @@ published: true
 ---
 
 ## Table of Contents
+
+
+## Wanna Count
+
+<!-- ... -->
+<script>
+  import Counter from './counter.svelte'
+</script>
+
+## Counter
+
+The counter is rendered inside Markdown.
+
+<Counter />
