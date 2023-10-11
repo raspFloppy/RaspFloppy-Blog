@@ -7,6 +7,8 @@
 		LinkedinSolid,
 		EnvelopeOpenSolid
 	} from 'flowbite-svelte-icons'
+
+	import 'devicon'
 </script>
 
 <div class="text-center flex flex-col items-center">

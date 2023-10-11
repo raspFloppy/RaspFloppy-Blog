@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { title } from '$lib/config.js';
+	import { title } from '$lib/config.js'
 	import { formatDate } from '$lib/utils'
 	import { Badge, Heading, P } from 'flowbite-svelte'
 
