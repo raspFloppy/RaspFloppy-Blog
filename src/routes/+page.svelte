@@ -11,7 +11,7 @@
 	import 'devicon'
 </script>
 
-<div class="text-center flex flex-col items-center">
+<div class="text-center flex flex-col items-center mt-52">
 	<Heading tag="h1" class="mb-2" customSize="text-4xl font-extrabold md:text-5xl lg:text-6xl">
 		Hi! I'm Gabriel
 	</Heading>
