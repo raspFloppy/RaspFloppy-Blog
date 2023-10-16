@@ -6,7 +6,8 @@
 	$: activeUrl = $page.url.pathname
 	let activeClass =
 		'text-md font-bold text-orange-600 dark:text-orange-600 dark:hover:text-orange-600 hover:text-orange-600 hover:border-orange-600'
-	let nonActiveClass = 'font-bold  text-md dark:text-white dark:hover:text-orange-600 hover:text-orange-600'
+	let nonActiveClass =
+		'font-bold  text-md dark:text-white dark:hover:text-orange-600 hover:text-orange-600'
 	let btnClass =
 		'text-gray-300 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl text-xl'
 </script>
@@ -19,11 +20,12 @@
 			{config.title}
 		</span>
 	</NavBrand>
+
+	<DarkMode {btnClass} />
 	<NavHamburger />
 	<NavUl {activeUrl} {activeClass} {nonActiveClass}>
 		<NavLi href="/">Home</NavLi>
 		<NavLi href="/about">About</NavLi>
 		<NavLi href="/blog">Blog</NavLi>
-		<NavLi><DarkMode {btnClass} /></NavLi>
 	</NavUl>
 </Navbar>

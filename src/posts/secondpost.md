@@ -14,6 +14,7 @@ published: true
 ## Svelte
 
 Media inside the **static** folder is server from `/`:
+![Text](favicon.png)
 
 ## Latex
 

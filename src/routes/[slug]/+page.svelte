@@ -22,13 +22,13 @@
 		</P>
 	</hgroup>
 
-	<div class="grid grid-cols-3 gap-2 mt-2">
+	<div class="grid grid-cols-3 gap-2 mt-2 mb-2">
 		{#each data.meta.categories as category}
-			<Badge border>&num;{category}</Badge>
+			<Badge>&num;{category}</Badge>
 		{/each}
 	</div>
 
-	<div class="mt-6 prose">
+	<div class="mt-2">
 		<svelte:component this={data.content} />
 	</div>
 </article>

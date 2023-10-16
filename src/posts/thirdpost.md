@@ -10,7 +10,6 @@ published: true
 
 ## Table of Contents
 
-
 ## Wanna Count
 
 <!-- ... -->
