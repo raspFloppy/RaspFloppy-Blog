@@ -3,6 +3,6 @@
 	import { Footer, FooterCopyright } from 'flowbite-svelte'
 </script>
 
-<Footer class="w-full z-20 bottom-0 left-0">
+<Footer footerType="logo" class="w-full mt-10">
 	<FooterCopyright href="/" by={config.title} year={new Date().getFullYear()} />
 </Footer>

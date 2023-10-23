@@ -1,5 +1,9 @@
+/* Write your global styles here, in PostCSS syntax */
 @import '@fontsource/manrope';
 @import '@fontsource/jetbrains-mono';
+@import 'open-props/postcss/style';
+@import 'open-props/postcss/normalize';
+@tailwind base;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +12,73 @@ html {
 	/* font */
 	--font-sans: 'Manrope', sans-serif;
 	--font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Heading */
+.prose h2::after,
+.prose h3::after {
+	content: '';
+}
+
+.prose h2:hover::after,
+.prose h3:hover::after {
+	content: '#';
+	text-decoration: underline;
+}
+
+.prose h2 {
+	@apply text-3xl font-extrabold;
+	margin-top: var(--size-8);
+	margin-bottom: var(--size-3);
+}
+
+.prose h3 {
+	@apply text-2xl font-extrabold;
+	margin-top: var(--size-8);
+	margin-bottom: var(--size-3);
+}
+
+.prose :is(p) {
+	font-size: 14px;
+	justify-content: center;
+	@media (min-width: 768px) {
+		font-size: 16px;
+	}
+}
+
+.prose :is(code) {
+	@apply text-black dark:text-black;
+}
+
+.prose :is(ul, ol) {
+	list-style-type: disc;
+	padding-left: var(--size-5);
+}
+
+.prose :is(ul, ol) li {
+	margin-block: var(--size-1);
+	padding-inline-start: var(--size-1);
+}
+
+.prose :is(ul, ol) li::marker {
+	color: orange;
+}
+
+.prose :is(a:hover) {
+	color: orange;
+}
+
+.prose pre {
+	padding: 1rem;
+	border-radius: 8px;
+	tab-size: 2;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	max-width: auto;
+	margin-top: 0.2rem;
+}
+
+.prose #table-of-contents {
+	text-decoration: underline;
 }

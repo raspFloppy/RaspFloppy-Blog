@@ -22,7 +22,7 @@
 		src="https://avatars.githubusercontent.com/u/73550410?v=4"
 		size="xl"
 		border
-		class="mb-4 ring-orange-500 dark:ring-orange-500"
+		class="mb-4 ring-orange-600 dark:ring-orange-600"
 	/>
 
 	<GradientButton href="/about" color="pinkToOrange" shadow={true}>
@@ -33,14 +33,14 @@
 
 <div class="flex flex-row justify-center space-x-3 mt-4">
 	<a href="https://www.linkedin.com/in/gabriel-monti-floppy/">
-		<LinkedinSolid class="dark:text-gray-300  dark:hover:text-orange-400 hover:text-orange-500" />
+		<LinkedinSolid class="dark:text-gray-300  dark:hover:text-orange-600 hover:text-orange-600" />
 	</a>
 	<a href="https://github.com/raspFloppy">
-		<GithubSolid class="dark:text-gray-300 dark:hover:text-orange-400 hover:text-orange-500" />
+		<GithubSolid class="dark:text-gray-300 dark:hover:text-orange-600 hover:text-orange-600" />
 	</a>
 	<a href="mailto:gabriel.monti@tutamail.com">
 		<EnvelopeOpenSolid
-			class="dark:text-gray-300 dark:hover:text-orange-400 hover:text-orange-500"
+			class="dark:text-gray-300 dark:hover:text-orange-600 hover:text-orange-600"
 		/>
 	</a>
 </div>

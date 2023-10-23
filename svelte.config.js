@@ -6,6 +6,7 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
 import rehypeKatex from 'rehype-katex'
+import readingTime from 'remark-reading-time'
 
 /**@type {import('mdsvex'.MdsvexCompileOptions)} */
 const mdsvexOptions = {
@@ -21,7 +22,7 @@ const mdsvexOptions = {
 			return `{@html \`${html}\`}`
 		}
 	},
-	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
+	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }], readingTime],
 	rehypePlugins: [rehypeSlug, rehypeKatex]
 }
 

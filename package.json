@@ -20,7 +20,6 @@
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"autoprefixer": "^10.4.14",
-		"boxicons": "^2.1.4",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -30,6 +29,7 @@
 		"mdsvex": "^0.11.0",
 		"postcss": "^8.4.24",
 		"postcss-load-config": "^4.0.1",
+		"postcss-nesting": "^12.0.1",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.10.1",
 		"rehype-katex": "^7.0.0",
@@ -47,9 +47,13 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/jetbrains-mono": "^5.0.15",
-		"@fontsource/manrope": "^5.0.15",
+		"@fontsource/jetbrains-mono": "^5.0.16",
+		"@fontsource/manrope": "^5.0.16",
 		"devicon": "^2.15.1",
+		"lucide-svelte": "^0.288.0",
+		"open-props": "^1.6.8",
+		"postcss-jit-props": "^1.0.14",
+		"remark-reading-time": "^2.0.1",
 		"shiki": "^0.14.4"
 	}
 }

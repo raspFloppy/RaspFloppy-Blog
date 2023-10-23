@@ -10,22 +10,16 @@
 	<title>{description}</title>
 </svelte:head>
 
-<div class="justify-center items-center flex flex-col">
+<div class="flex justify-center items-center flex-col">
 	{#each data.posts as post}
-		<Card
-			img="https://avatars.githubusercontent.com/u/73550410?v=4"
-			href={post.slug}
-			horizontal
-			class="mb-4"
-			padding="lg"
-		>
-			<h5 class="mb-2 md:text-2xl text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+		<Card href={post.slug} class="mb-4 w-2/3" padding="xl" size="xl">
+			<h5 class="mb-2 md:text-3xl text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 				{post.title}
 			</h5>
-			<p class="mb-3 font-normal text-gray-600 dark:text-gray-300 leading-tight">
+			<p class="mb-3 md:text-sm text-xs text-gray-600 dark:text-gray-300 leading-tight">
 				{post.description}
 			</p>
-			<p>{formatDate(post.date)}</p>
+			<p class="text-xs md:text-sm italic">{formatDate(post.date)}</p>
 		</Card>
 	{/each}
 </div>

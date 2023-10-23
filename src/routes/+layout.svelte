@@ -12,7 +12,7 @@
 
 	{#key data.currentRoute}
 		<main
-			class="flex-grow mt-20 p-4"
+			class="flex-grow mt-20 px-4"
 			in:fade={{ duration: 150, delay: 150 }}
 			out:fade={{ duration: 150 }}
 		>

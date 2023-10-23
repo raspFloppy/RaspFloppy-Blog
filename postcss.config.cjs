@@ -1,12 +1,12 @@
-const tailwindcss = require('tailwindcss')
-const autoprefixer = require('autoprefixer')
+const postcssJitProps = require('postcss-jit-props')
+const OpenProps = require('open-props')
 
 const config = {
 	plugins: [
-		//Some plugins, like tailwindcss/nesting, need to run before Tailwind,
-		tailwindcss(),
-		//But others, like autoprefixer, need to run after,
-		autoprefixer
+		postcssJitProps(OpenProps),
+		require('tailwindcss/nesting'),
+		require('tailwindcss'),
+		require('autoprefixer')
 	]
 }
 
