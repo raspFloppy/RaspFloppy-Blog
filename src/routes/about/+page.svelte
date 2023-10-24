@@ -19,28 +19,25 @@
 	<title>{description}</title>
 </svelte:head>
 
-<div class="items-center justify-center flex flex-col">
+<div class="items-center justify-center flex flex-col mt-10">
 	<!-- About Me Section -->
 	<div id="about-section">
 		<figure class="mx-auto max-w-screen-md text-center">
 			<QuoteSolid class="mx-auto mb-3 w-12 h-12 text-gray-600 dark:text-gray-600" />
-			<Blockquote bgClass="md md:xl">
-				"Flowbite is just awesome. It contains tons of predesigned components and pages starting
-				from login screen to complex dashboard. Perfect choice for your next SaaS application."
+			<Blockquote bgClass="lg md:xl">
+				"Hi there! I'm Gabriel, a tech enthusiast who loves coding, automating tasks, optimizing
+				code and also a Linux lover; I'm deeply interested in science, especially physics,
+				mathematics, and economics. <br />I'm an avid reader, particularly of satirical dystopian
+				novels and popular science books. I'm kinda into gym, even tho I have a long way to go.
+				<br /><br />
+				I've always wanted to use my writing to help others, and I hope my blog can fulfill that purpose,
+				so if you are curious check it out:"
 			</Blockquote>
-			<figcaption class="flex justify-center items-center mt-6 space-x-3">
-				<img
-					class="w-6 h-6 rounded-full"
-					src="https://avatars.githubusercontent.com/u/73550410?v=4"
-					alt="raspFloppy github profile"
-				/>
-				<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-					<cite class="pr-3 font-medium text-gray-900 dark:text-white">Gabriel</cite>
-					<cite class="pl-3 text-sm font-light text-gray-600 dark:text-gray-400">
-						Software Engineer
-					</cite>
-				</div>
-			</figcaption>
+			<Button href="/blog" color="alternative">
+				Go to Blog
+				<ArrowUpRightFromSquareOutline class="ml-2 w-3 h-3" />
+			</Button>
+			<figcaption class="flex justify-center items-center mt-6 space-x-3" />
 		</figure>
 	</div>
 
@@ -53,7 +50,7 @@
 		<Heading tag="h2" class="mb-4 md:text-4xl text-3xl underline md:underline-offset-8">
 			Experience
 		</Heading>
-		<Timeline>
+		<Timeline order="vertical">
 			<TimelineItem title="Movendo Technology" date="March 2022 - Present">
 				<div class="grid grid-cols-8 max-w-xs mt-2 mb-4">
 					<i class="devicon-debian-plain colored" />
@@ -65,8 +62,29 @@
 					<i class="devicon devicon-git-plain colored" />
 					<i class="devicon-bitbucket-original colored" />
 				</div>
-				<P class="text-sm font-normal md:text-base text-gray-600 dark:text-gray-300">
-					Working as a Junior Software Engineer
+				<P class="text-sm font-normal md:text-base text-gray-600 dark:text-gray-300 mb-2">
+					I am currently employed as a Junior Software Engineer at Movendo Technology,a company in
+					the field of rehabilitative robotics. In my current roles, I undertake various
+					responsibilities, including:
+					<List class="text-sm font-normal md:text-base">
+						<Li class="mb-2 mt-2">
+							Developing an augmented reality application in <strong>Python Pyside6 OpenCV</strong> and
+							Mediapipe for rehab.
+						</Li>
+						<Li class="mb-2">
+							Maintain and improve the rehab desktop application written in <strong>
+								C++ Qt and QML
+							</strong>
+							that serves as a user interface for patient gaming sessions.
+						</Li>
+						<Li class="mb-2">
+							Maintain and improve the web application based <strong>Flask and Angular</strong>,
+							used by therapists to customize rehabilitation sessions.
+						</Li>
+						<Li class="mb-2">
+							Develop CLI application in <strong>C++</strong> to detect measurement errors in the robotics.
+						</Li>
+					</List>
 				</P>
 			</TimelineItem>
 			<TimelineItem title="Linuxhub.it" date="March 2021 - March 2023">
