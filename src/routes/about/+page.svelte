@@ -73,7 +73,8 @@
 							Mediapipe for rehab.
 						</Li>
 						<Li class="mb-2">
-							Maintain and improve the rehab desktop application written in <strong>
+							Maintain and improve the rehab desktop application written in 
+							<strong>
 								C++ Qt and QML
 							</strong>
 							that serves as a user interface for patient gaming sessions.
