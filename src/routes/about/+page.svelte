@@ -165,7 +165,8 @@
 					<i class="devicon-git-plain colored" />
 				</div>
 				<P class="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300" >
-					During the first year at university I did a 3 months course for cybersecurity 
+					During my first year at university, I took a 3-month cybersecurity course where I learned both offensive and defensive techniques. 
+					I also participated in a Capture The Flag (CTF) competition, where I delved into the field of binary exploitation. 
 				</P>
 				<Button
 					href="https://openbadges.bestr.it/public/assertions/ISZ_Ku2KSKWT1-iVRB5lzA"
@@ -188,10 +189,7 @@
 					<i class="devicon-git-plain colored" />
 				</div>
 				<P class="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300">
-					During high school, I completed a two-month internship at a small consulting company in
-					Genoa. <br />
-					Here, I was able to strengthen my knowledge of Linux and delve into the world of web development
-					and Docker.
+					I attended a technical computer institute where I built the foundation of my knowledge in computer science, systems, and networks. For my final project, I developed a REST API using <strong>Javascript</strong>, <strong>ExpressJS</strong>, and <strong>Node.js</strong> to gather financial data for the top 100 cryptocurrencies
 				</P>
 			</TimelineItem>
 		</Timeline>
