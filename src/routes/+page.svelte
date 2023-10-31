@@ -11,7 +11,7 @@
 	import 'devicon'
 </script>
 
-<div class="text-center flex flex-col items-center mt-48">
+<div class="h-screen flex justify-center items-center text-center">
 	<Heading tag="h1" class="mb-2" customSize="text-4xl font-extrabold md:text-5xl lg:text-6xl">
 		Hi! I'm Gabriel
 	</Heading>
@@ -29,18 +29,17 @@
 		Learn More
 		<ArrowUpRightFromSquareOutline class="w-3.5 h-3.5 ml-2" />
 	</GradientButton>
-</div>
-
-<div class="flex flex-row justify-center space-x-3 mt-4">
-	<a href="https://www.linkedin.com/in/gabriel-monti-floppy/">
-		<LinkedinSolid class="dark:text-gray-300  dark:hover:text-orange-600 hover:text-orange-600" />
-	</a>
-	<a href="https://github.com/raspFloppy">
-		<GithubSolid class="dark:text-gray-300 dark:hover:text-orange-600 hover:text-orange-600" />
-	</a>
-	<a href="mailto:gabriel.monti@tutamail.com">
-		<EnvelopeOpenSolid
-			class="dark:text-gray-300 dark:hover:text-orange-600 hover:text-orange-600"
-		/>
-	</a>
+	<div class="flex flex-row justify-center space-x-3 mt-4">
+		<a href="https://www.linkedin.com/in/gabriel-monti-floppy/">
+			<LinkedinSolid class="dark:text-gray-300  dark:hover:text-orange-600 hover:text-orange-600" />
+		</a>
+		<a href="https://github.com/raspFloppy">
+			<GithubSolid class="dark:text-gray-300 dark:hover:text-orange-600 hover:text-orange-600" />
+		</a>
+		<a href="mailto:gabriel.monti@tutamail.com">
+			<EnvelopeOpenSolid
+				class="dark:text-gray-300 dark:hover:text-orange-600 hover:text-orange-600"
+			/>
+		</a>
+	</div>
 </div>

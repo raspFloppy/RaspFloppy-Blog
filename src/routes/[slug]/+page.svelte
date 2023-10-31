@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { goto } from '$app/navigation'
 	import { title } from '$lib/config.js'
 	import { formatDate } from '$lib/utils'
-	import { Badge, Heading, P } from 'flowbite-svelte'
+	import { Badge, GradientButton, Heading, P } from 'flowbite-svelte'
 	import { ClockSolid, CalendarPlusSolid } from 'flowbite-svelte-icons'
 
 	export let data
@@ -12,6 +13,13 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
+
+<GradientButton
+	on:click={() => {
+		let route = '/blog'
+		goto(route)
+	}}
+/>
 
 <article class="dark:text-white flex flex-col justify-center items-center">
 	<hgroup>

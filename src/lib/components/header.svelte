@@ -12,7 +12,7 @@
 		'text-gray-300 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg'
 </script>
 
-<Navbar color="gray" class="fixed w-full z-20 top-0 left-0">
+<Navbar color="gray" class="w-full z-20 top-0 left-0">
 	<NavBrand href="/">
 		<span
 			class="self-center whitespace-nowrap text-xl font-bold dark:text-white dark:hover:text-orange-600 hover:text-orange-600 transition-colors duration-300 hover:border-b-2 border-transparent hover:border-orange-600"

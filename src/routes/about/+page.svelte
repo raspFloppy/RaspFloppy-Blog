@@ -27,11 +27,11 @@
 			<Blockquote bgClass="lg md:xl">
 				"Hi there! I'm Gabriel, a tech enthusiast who loves coding, automating tasks, optimizing
 				code and also a Linux lover; I'm deeply interested in science, especially physics,
-				mathematics, and economics. <br />I'm an avid reader, particularly of satirical dystopian
-				novels and popular science books. I'm kinda into gym, even tho I have a long way to go.
+				mathematics, and economics. <br />I'm an avid reader, particularly of dystopian novels and
+				popular science books. I'm kinda into gym and i like to travel.
 				<br /><br />
-				I've always wanted to use my writing to help others, and I hope my blog can fulfill that purpose,
-				so if you are curious check it out:"
+				I've always wanted to use my writing to help others, so I hope my blog can fulfill that purpose,
+				if you are curious check it out:"
 			</Blockquote>
 			<Button href="/blog" color="alternative">
 				Go to Blog
@@ -73,10 +73,8 @@
 							Mediapipe for rehab.
 						</Li>
 						<Li class="mb-2">
-							Maintain and improve the rehab desktop application written in 
-							<strong>
-								C++ Qt and QML
-							</strong>
+							Maintain and improve the rehab desktop application written in
+							<strong> C++ Qt and QML </strong>
 							that serves as a user interface for patient gaming sessions.
 						</Li>
 						<Li class="mb-2">
@@ -165,9 +163,10 @@
 					<i class="devicon-python-plain colored" />
 					<i class="devicon-git-plain colored" />
 				</div>
-				<P class="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300" >
-					During my first year at university, I took a 3-month cybersecurity course where I learned both offensive and defensive techniques. 
-					I also participated in a Capture The Flag (CTF) competition, where I delved into the field of binary exploitation. 
+				<P class="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300">
+					During my first year at university, I took a 3-month cybersecurity course where I learned
+					both offensive and defensive techniques. I also participated in a Capture The Flag (CTF)
+					competition, where I delved into the field of binary exploitation.
 				</P>
 				<Button
 					href="https://openbadges.bestr.it/public/assertions/ISZ_Ku2KSKWT1-iVRB5lzA"
@@ -190,7 +189,10 @@
 					<i class="devicon-git-plain colored" />
 				</div>
 				<P class="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300">
-					I attended a technical computer institute where I built the foundation of my knowledge in computer science, systems, and networks. For my final project, I developed a REST API using <strong>Javascript</strong>, <strong>ExpressJS</strong>, and <strong>Node.js</strong> to gather financial data for the top 100 cryptocurrencies
+					I attended a technical computer institute where I built the foundation of my knowledge in
+					computer science, systems, and networks. For my final project, I developed a REST API
+					using <strong>Javascript</strong>, <strong>ExpressJS</strong>, and
+					<strong>Node.js</strong> to gather financial data for the top 100 cryptocurrencies
 				</P>
 			</TimelineItem>
 		</Timeline>

@@ -15,14 +15,15 @@ html {
 }
 
 /* Heading */
-.prose h2::after,
-.prose h3::after {
+.prose h2::before,
+.prose h3::before {
 	content: '';
 }
 
-.prose h2:hover::after,
-.prose h3:hover::after {
+.prose h2:hover::before,
+.prose h3:hover::before {
 	content: '#';
+	padding-right: 10px;
 	text-decoration: underline;
 }
 
@@ -61,11 +62,12 @@ html {
 }
 
 .prose :is(ul, ol) li::marker {
-	color: orange;
+	color: #d14111;
 }
 
 .prose :is(a:hover) {
-	color: orange;
+	color: #d14111;
+	text-decoration: underline;
 }
 
 .prose pre {
