@@ -20,7 +20,6 @@ async function getPosts(limit: number | null, skip: number): Promise<Post[]> {
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
-	console.log(skip)
 	if (skip) {
 		posts = posts.slice(skip)
 	}

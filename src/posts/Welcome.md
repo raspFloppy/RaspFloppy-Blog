@@ -1,7 +1,7 @@
 ---
 title: Welcome Guys!
 description: Welcome to my blog this is my first post
-date: '2023-10-29'
+date: '2023-11-01'
 categories:
   - blog
   - welcome
@@ -23,7 +23,7 @@ to **ensure that I understand** the subject well, **strengthen** my knowledge of
 Also, since **English** is not my native language, this practice is an excellent way to improve my English skills.
 So, yes, I mostly do it for myself, but I also aim to create something useful for techy people.
 
-## What's the Topics? 😅
+## What's the Topics?
 
 Good question, well I have several interest, but this blog is mostly for people in the field of computer science or techy enthusiasts, I mainly gonna talk about:
 

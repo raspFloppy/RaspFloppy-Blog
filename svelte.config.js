@@ -6,7 +6,7 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
 import rehypeKatex from 'rehype-katex'
-import readingTime from 'remark-reading-time'
+import readingTime from 'mdsvex-reading-time'
 
 /**@type {import('mdsvex'.MdsvexCompileOptions)} */
 const mdsvexOptions = {

@@ -4,6 +4,7 @@
 	import { description } from '$lib/config'
 	import { PaginationItem } from 'flowbite-svelte'
 	import { ArrowLeftSolid, ArrowRightSolid } from 'flowbite-svelte-icons'
+	import { goto } from '$app/navigation'
 
 	export let data
 
@@ -19,12 +20,14 @@
 	const previous = () => {
 		if (currentPage > 1) {
 			currentPage -= 1
+			goto(`?${currentPage.toString()}`)
 			scrollToTop()
 		}
 	}
 	const next = () => {
 		if (currentPage < totalPages) {
 			currentPage += 1
+			goto(`?${currentPage.toString()}`)
 			scrollToTop()
 		}
 	}
@@ -35,19 +38,15 @@
 </script>
 
 <svelte:head>
-	<title>{description}</title>	 
+	<title>{description}</title>
 </svelte:head>
-
-{#each data.posts as post}
-	{post.slug}
-{/each}
 
 <div class="flex justify-center items-center flex-col">
 	<div class="mt-6 mb-16 w-1/2 min-w-[275px]">
 		<Heading tag="h2" customSize="text-4xl font-extrabold">Welcome to my Blog!</Heading>
 		<P class="text-sm md:text-base my-4 text-gray-500">
 			Hello there! I'm Gabriel and this is my blog!<br />
-			Here you can find a lot of stuff I love to learn, use, talk about.
+			Here you can find a lot of stuff I love to learn, use and talk about.
 		</P>
 	</div>
 

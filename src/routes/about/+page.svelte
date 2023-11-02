@@ -9,7 +9,8 @@
 		P,
 		List,
 		Li,
-		Blockquote
+		Blockquote,
+		GradientButton
 	} from 'flowbite-svelte'
 	import { ArrowUpRightFromSquareOutline, QuoteSolid } from 'flowbite-svelte-icons'
 	import 'devicon'
@@ -33,10 +34,10 @@
 				I've always wanted to use my writing to help others, so I hope my blog can fulfill that purpose,
 				if you are curious check it out:"
 			</Blockquote>
-			<Button href="/blog" color="alternative">
+			<GradientButton href="/blog" color="pinkToOrange" shadow={true}>
 				Go to Blog
 				<ArrowUpRightFromSquareOutline class="ml-2 w-3 h-3" />
-			</Button>
+			</GradientButton>
 			<figcaption class="flex justify-center items-center mt-6 space-x-3" />
 		</figure>
 	</div>
