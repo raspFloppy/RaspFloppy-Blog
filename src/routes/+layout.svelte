@@ -11,7 +11,11 @@
 	<Header />
 
 	{#key data.currentRoute}
-		<main class="flex-grow" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+		<main
+			class="flex-grow px-4"
+			in:fade={{ duration: 150, delay: 150 }}
+			out:fade={{ duration: 150 }}
+		>
 			<slot />
 		</main>
 	{/key}
