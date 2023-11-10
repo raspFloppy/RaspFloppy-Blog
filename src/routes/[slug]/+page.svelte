@@ -14,7 +14,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article class="dark:text-white flex flex-col justify-center items-center">
+<article class="dark:text-white flex flex-col justify-center items-center mb-15">
 	<hgroup>
 		<Heading tag="h2" customSize="md:text-6xl text-4xl font-extrabold text-center" class="mt-10">
 			{data.meta.title}
