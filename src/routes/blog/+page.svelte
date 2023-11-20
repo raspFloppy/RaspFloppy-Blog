@@ -63,13 +63,15 @@
 	{/each}
 </div>
 
-<div class="flex items-center justify-center space-x-10 flex-row">
-	<PaginationItem large class="flex items-center" on:click={previous}>
-		<ArrowLeftSolid class="mr-2 w-5 h-5" />
-		Previous
-	</PaginationItem>
-	<PaginationItem large class="flex items-center" on:click={next}>
-		Next
-		<ArrowRightSolid class="ml-2 w-5 h-5" />
-	</PaginationItem>
-</div>
+{#if totalPages > pageSize}
+	<div class="flex items-center justify-center space-x-10 flex-row">
+		<PaginationItem large class="flex items-center" on:click={previous}>
+			<ArrowLeftSolid class="mr-2 w-5 h-5" />
+			Previous
+		</PaginationItem>
+		<PaginationItem large class="flex items-center" on:click={next}>
+			Next
+			<ArrowRightSolid class="ml-2 w-5 h-5" />
+		</PaginationItem>
+	</div>
+{/if}
