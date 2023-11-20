@@ -18,12 +18,7 @@
 	<Heading tag="h3" class="mb-4" customSize="text-2xl font-extrabold md:text-2xl lg:text-2xl">
 		Software Engineer
 	</Heading>
-	<Avatar
-		src="https://avatars.githubusercontent.com/u/73550410?v=4"
-		size="xl"
-		border
-		class="mb-4 ring-orange-600 dark:ring-orange-600"
-	/>
+	<Avatar src="propic.jpeg" size="xl" border class="mb-4 ring-orange-600 dark:ring-orange-600" />
 
 	<GradientButton href="/about" color="pinkToOrange" shadow={true}>
 		Learn More

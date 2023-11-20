@@ -10,12 +10,12 @@ published: true
 
 ## Table of Contents
 
-## Hello Everyone 👋
+## Hello Everyone👋
 
 Hello everyone and **welcome to my Blog!**
 Finally I beated my laziness and started blogging and I hope it's gonna be an amazing journey.
 
-## Why Blogging ❓
+## Why Blogging?
 
 I have always wanted to share my knowledge with others, and I have found that writing about the topics I know or am learning about is a good way to achieve several goals:
 to **ensure that I understand** the subject well, **strengthen** my knowledge of it, and, in case I discover gaps in my understanding, **delve deeper** into the topic to cover those gaps.
@@ -33,7 +33,7 @@ Good question, well I have several interest, but this blog is mostly for people 
 
 There may be other topics as well, but these will be the main ones.
 
-## What I Plan
+## What I Plan?
 
 Well if I reach out a good portion of people I would like to create a **community** on Telegram and Discord to **share** our passions, organize **events** and
 most importantly create new acquaintances and friendships.

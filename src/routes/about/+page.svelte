@@ -198,8 +198,4 @@
 			</TimelineItem>
 		</Timeline>
 	</div>
-
-	<Hr classHr="w-96 h-1 mx-auto my-4 rounded md:my-10">
-		<QuoteSolid class="w-4 h-4 text-gray-700 dark:text-gray-300" />
-	</Hr>
 </div>

@@ -15,16 +15,17 @@ html {
 }
 
 /* Heading */
-.prose h2::before,
-.prose h3::before {
+.prose h2::after,
+.prose h3::after {
 	content: '';
 }
 
-.prose h2:hover::before,
-.prose h3:hover::before {
+.prose h2:hover::after,
+.prose h3:hover::after {
 	content: '#';
-	padding-right: 10px;
+	padding-left: 10px;
 	text-decoration: underline;
+	color: grey; /* Set the color to grey */
 }
 
 .prose h2 {
