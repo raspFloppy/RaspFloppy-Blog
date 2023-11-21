@@ -32,7 +32,7 @@
 				popular science books. I'm kinda into gym and i like to travel.
 				<br /><br />
 				I've always wanted to use my writing to help others, so I hope my blog can fulfill that purpose,
-				if you are curious check it out:"
+				if you are curious check it out"
 			</Blockquote>
 			<GradientButton href="/blog" color="pinkToOrange" shadow={true}>
 				Go to Blog
@@ -65,8 +65,8 @@
 					<i class="devicon-bitbucket-original colored" />
 				</div>
 				<P class="text-sm font-normal md:text-base text-gray-600 dark:text-gray-300 mb-2">
-					I am currently employed as a Junior Software Engineer at Movendo Technology,a company in
-					the field of rehabilitative robotics. In my current roles, I undertake various
+					I am currently employed as a Junior Software Engineer at Movendo Technology, a company in
+					the field of rehabilitative robotics. In my current role, I undertake various
 					responsibilities, including:
 					<List class="text-sm font-normal md:text-base">
 						<Li class="mb-2 mt-2">
